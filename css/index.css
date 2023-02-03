@@ -88,21 +88,278 @@ a {
   }
 }
 
+.settingPannel {
+  height: 100%;
+  width: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: deeppink; 
+  transition: all 0.39s ease-in-out;
+  white-space: nowrap;
+}
+
+.showsets {
+  width: 200px;
+}
+
+.creditsPanel {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: fuchsia;
+  transition: all 0.39s ease-in-out; 
+  white-space: nowrap;
+}
+
+.showcreds {
+  height: 100px;
+}
+
+.icon, .closeS, .closeP{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 
 
-ok so if we r gonna keep it like that 
-the
-when u click on it it will change 2 this
-but also
-stop moving
+  i told u i will update r patch notes :3
 
-or
+  i dont like that it get all squish when it is going off the screen 
 
-what if i save the gif as a image file
-that would b the same thing rite
-just a snapshot of the gif p much rite
+  google wont buy like that i asked
+  >.>
+
+    i told shiro 
+    that u said i am victoria secret goth 
+    n she laugh in my face x.x 
+    she was liike
+    yeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    x.x
+    n when i wnt 2 the other venue
+    n ask if they think i am goth 
+    >.>
+    then
+    i showed them by bartending skills 
+    ez pz
+    they were liike
+
+    i never have gumyy worms or caprisun o.o
+    i think he means just as his ff bartender o.o
+    most bartends prollyy dont use gumyy worms or caprisun
+    just mee
+    i am unique :3
+
+    mute button
+
+  i didnt no what word u said u goob
+
+
+  oh
+  i not if statements
+  if "blank" then this thing happens
+  rite
+  ok ill shut up
+  o.o
+
+  sryy i was doing a thing on ff
+
+
+  ig the question is..
+  should the music start over when u unpause
+  or should it pickup where u pause it
+
+  what that all we did 2day
+  k
+  yea should i add that
+  mhm mhm 
+
+  ok
+  now we have um
+
+  patch notes
+  can i put my patch notes in sumplace so ppl can see
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  why can we .show when there is no show class on the left
+
+
+
+
+    also
+    i wanna make a diffiii mouse on the screen
+    n mayb when u liike  hover over the music notes the mouse will change 2 another icon
+    ok just that 4 now
+    im getting excited x.x
+
+    n getting ahead of myself x/x
+
+    ok now we have 2 make it liike a box in the middle of the screen n like
+    make it prettyy n stuff
+    u no what i mean
+
+    is it?
+
+    like what we just made a super uggyy box x.x
+    i RLYYYYYYYY wanna drink this coffeee rn x.xmy coffeee maker
+    is in the car
+
+    remember
+
+    when she getr hpome
+    i will get it from the car
+    n then it will b inside 4ever
+    is just bran new
+    we never open this 1 yet
+    n has been siting in the car cuz jess lazyy bumm wont bring it in x.x
+    not that i bring it in eithe r soooo .. :eyes: 
+    yea u dont remind me so tbhh
+    rlyy
+    is ur fault i dont have coffeee rn
+    shame
+
+    wait
+    r u srslyy gonna have coffee without me >.>
+    if i cant have coffee then u shouldnt have coffee
+    ew
+    coffee jelyy
+    i have had 0 cigyy 2day
+
+    i took 1 pull earlier
+    mhm
+
+    im still liike kinda riding that hi 4 rn
+
+    i dont need 2 b blasted all day x.x
+    i was p blasted b4 x.x when i 1st took the pull
+
+    yee
+
+    ok
+
+
+    ok so obvii there r liike a billion 22 pick from
+    so i pick 
+
+    u should get me sodiii poppyyy
+    x.x
+    like 100 sodii poppyyys
+
+
+    well thats a bug x.x
+
+    so judgyy 
+
+  ok
+  so
+  few things
+
+  yes
+  it work
+
+  now
+
+  we wanna make it so it autp plays
+  n then
+  also
+  loops
+  n when u click 
+  instread of play
+  it is toggle
+
+  wait
+  ok
+  there was liike a rlyy long delay  from the start 2 the reset
+
+  should we 
+  update r version
+  o.o
+
+  i update us from 0.1.2 -> 0.1.3
+
+  i updated r patch notes :3
+
+  wellllll
+  i mean
+  we have sum kinda music
+  so ig that is fine
+  like the settings box
+  is just shabbyy work
+  but
+  is sumthing
+  u no
+  we need 2 make a credits box 2 
+  im gonna do that while u look at things
+
+  mayb nxt thing we work on is how 2 turn off music >.>
+
+  wait im not done yet 
+
+
 
 */
 

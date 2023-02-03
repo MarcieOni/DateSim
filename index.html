@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UwU Sim 0.1.2</title>
+    <title>UwU Sim 0.1.3</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -13,14 +13,70 @@
     <h1>Date Emily</h1>
     <h2>Simulator</h2>
     <a>START</a>
-    <div class="sound"><img src="images/sound.gif"></div>
-    <div class="settings"><img src="images/settings.png"></div>
-    <div class="credits">credits</div>
+    <div class="sound icon"><img src="images/sound.gif"></div>
+    <div class="settings icon"><img src="images/settings.png"></div>
+    <div class="credits icon">credits</div>
 </div>
 
+<div class="settingPannel">
+ <p> ♥ Emily ♥ </p>
+ <span class="closeS"> X </span>
 
+</div>
+
+<div class="creditsPanel">
+    <p> Dev: ♥ Emily ♥ </p>
+    <span class="closeP"> X </span>
+</div>
+
+<audio class="main-music" src="audio/Star_Struck.wav" loop></audio>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+       $(".settings").click(function(){
+        $(".settingPannel").addClass("showsets")
+       })
+
+       $(".credits").click(function(){
+        $(".creditsPanel").addClass("showcreds")
+       })
+
+       $(".sound").click(function(){
+        if (!$(this).hasClass("playing")){
+            $(this).addClass("playing")
+            $(".main-music")[0].play()
+        } else {
+            $(this).removeClass("playing")
+            $(".main-music")[0].pause()
+        } 
+
+       })
+
+       $(".closeS").click(function(){
+        $(".settingPannel").removeClass("showsets")
+       })
+
+       $(".closeP").click(function(){
+        $(".creditsPanel").removeClass("showcreds")
+       })
+
+        
+    });
 
     
+
+
+
+
+
+
+</script>
+
 </body>
 </html>
 
@@ -33,15 +89,22 @@
 
 <!--     
 
-  1. Choose icons for sound and settings and implement - DONE
-  2. Find song for audio button
-  3. Choose fonts
-  4. Make start page
-  5. Make credits page
 
  -->
 
 
+
+
+<!-- 
+    0.1.3 UPDATE
+    - added jQuery for java stuff
+    - added music
+        -added pause to music
+    - added setting box
+       -added close button
+    - added credits box
+        -added close button
+ -->
 
 
 
