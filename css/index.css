@@ -9,24 +9,38 @@ html, body {
     color: #fff;
 }
 
+body {
+  cursor: url('../images/cursor.png'), auto;
+  user-select: none;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+}
+
 h1 {
     font-size: 120px;
     margin: 0;
     font-family: 'Emilys Candy', cursive;
 }
 
-h2{
+h2 {
     font-family: 'Emilys Candy', cursive;
     margin: 0px;
     font-size: 42px;
 }
 
+p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
 a {
     color: fuchsia;
-    font-family: 'Press Start 2P', cursive;
     font-size: 20px;
     animation: flash 1.5s steps(2, end) infinite both;
     margin-top: 42px;
+    display: block;
+    cursor: url('../images/hover-cursor.png'), auto;
 }
 
 .box {
@@ -46,9 +60,9 @@ a {
     left: 16px;
 }
 
-/* .sound img{
+.sound:not(.playing) img{
     filter: grayscale();
-} */
+}
 
 .settings {
     position: absolute;
@@ -88,6 +102,110 @@ a {
   }
 }
 
+@keyframes letters {
+  0% {
+    transform: translateY(-10%) rotate(-5deg)
+  }
+  100% {
+    transform: translateY(10%) rotate(5deg)
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0%)
+  }
+  100% {
+    transform: translateY(-50%)
+  }
+}
+
+ @-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.box a:hover span {
+  animation: wave 0.25s linear alternate infinite both;
+  display: inline-block;
+}
+
+.box a:hover span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.box a:hover span:nth-child(3) {
+  animation-delay: 0.28s;
+}
+
+.box a:hover span:nth-child(4) {
+  animation-delay: 0.41s;
+}
+
+.box a:hover span:nth-child(5) {
+  animation-delay: 0.54s;
+}
+
+.box h1 span {
+  animation: letters 1.8s ease-in-out alternate infinite both;
+  display: inline-block;
+  transform-origin: center center;
+}
+
+.box h1 span:nth-child(2) { /*A*/
+  animation-duration: 1.49s;
+}
+.box h1 span:nth-child(3) { /*T*/
+  animation-duration: 1.31s;
+}
+.box h1 span:nth-child(4) { /*E*/
+  animation-duration: 1.67s;
+}
+.box h1 span:nth-child(5) { /*E*/
+  animation-duration: 1.98s;
+}
+.box h1 span:nth-child(6) { /*m*/
+  animation-duration: 1.27s;
+}
+.box h1 span:nth-child(7) { /*i*/
+  animation-duration: 1.89s;
+}
+.box h1 span:nth-child(8) { /*l*/
+  animation-duration: 1.19s;
+}
+.box h1 span:nth-child(9) { /*y*/
+  animation-duration: 1.77s;
+}
+
 .settingPannel {
   height: 100%;
   width: 0px;
@@ -105,28 +223,92 @@ a {
 }
 
 .creditsPanel {
-  height: 0;
+  height: 100%;
   width: 100%;
-  overflow: hidden;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: fuchsia;
-  transition: all 0.39s ease-in-out; 
+  top: 0px;
+  left: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   white-space: nowrap;
 }
 
-.showcreds {
-  height: 100px;
+.creditsPanel .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.creditsPanel .container {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  z-index: 69;
+}
+
+.creditsPanel .container .background {
+  background-image: url("../images/credits.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  /* opacity: 60%; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 69px;
+
+}
+
+.creditsPanel .container .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 70;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 69px;
+}
+
+.creditsPanel.showPanel {
+  display: flex;
+  -webkit-animation: puff-in-center 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: puff-in-center 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
 .icon, .closeS, .closeP{
-  cursor: pointer;
+  cursor: url('../images/hover-cursor.png'), auto;
+}
+
+.closeP {
+  position: absolute;
+  top: 10px;
+  right: 115px;
+  font-size: 36px;
+  padding: 12px;
+}
+
+.indent {
+  padding-left: 20px;
 }
 
 
+/* i kinda wanna make it a pic
+
+  i wanna smoke cigyy 
+  we should push r code
+  
 
 
+*/
 
 
 
@@ -156,6 +338,46 @@ a {
 
 
 /* 
+
+  i dont want the opacity ne more
+
+
+
+
+  i want it 2 b like
+  transparent
+  so like
+  we can still see the letters behind it
+
+
+  i think what i wanna have is the delay 
+  i think that is what im picturing
+  but not explaining it rite
+  i wanna "start" 2 wave rlly fast mayb 
+
+
+    sryy im p hi rn
+    n my brain is like
+    proceessing rn
+    im liike
+    figuring things out ig
+    puting it together
+    liike
+    it makes sense
+
+  wait
+  it works
+  it workd
+  it work
+
+
+
+
+
+
+
+
+
 
   i told u i will update r patch notes :3
 
@@ -213,7 +435,68 @@ a {
 
   patch notes
   can i put my patch notes in sumplace so ppl can see
-  
+
+  help
+
+  >.>
+
+  whyy >.>
+  thats dumm
+
+  how do i do that
+  >.>
+
+
+  u didnt see that x.x
+  jess will b home soon x.x
+
+    ok so
+    i yea like the controler
+    but
+    i wanna make them like
+    each letter float on its own
+    do u uwnderstand
+    i dont wanna them 2 all 
+
+    yea kinda
+    like they r just floating there not rlly in a specific way
+    not like wavey 
+    rite
+    yea
+    we will get it
+
+    wait rlly
+    that is awesome
+
+    yea i wanna do that
+
+    dev emilyy
+
+    ok
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,26 +10,68 @@
 <body>
 
 <div class="box">    
-    <h1>Date Emily</h1>
+    <h1><span>D</span><span>a</span><span>t</span><span>e</span> <span>E</span><span>m</span><span>i</span><span>l</span><span>y</span></h1>
+
     <h2>Simulator</h2>
-    <a>START</a>
+
+    <a><span>S</span><span>T</span><span>A</span><span>R</span><span>T</span></a>
+
     <div class="sound icon"><img src="images/sound.gif"></div>
-    <div class="settings icon"><img src="images/settings.png"></div>
+    <div class="settings icon"><img src="images/settings-icon.png"></div>
     <div class="credits icon">credits</div>
 </div>
 
 <div class="settingPannel">
- <p> ♥ Emily ♥ </p>
+ <p> Settings </p>
  <span class="closeS"> X </span>
 
 </div>
 
 <div class="creditsPanel">
-    <p> Dev: ♥ Emily ♥ </p>
-    <span class="closeP"> X </span>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="background"></div>
+        <div class="content">
+            <p> Dev: </p>
+            <p class="indent"> ♥ Emily ♥ </p>
+            <span class="closeP"> X </span>
+        </div>    
+    </div>
 </div>
 
-<audio class="main-music" src="audio/Star_Struck.wav" loop></audio>
+<audio class="main-music" src="audio/home-music.mp3" loop></audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -43,7 +85,7 @@
        })
 
        $(".credits").click(function(){
-        $(".creditsPanel").addClass("showcreds")
+        $(".creditsPanel").addClass("showPanel")
        })
 
        $(".sound").click(function(){
@@ -61,8 +103,8 @@
         $(".settingPannel").removeClass("showsets")
        })
 
-       $(".closeP").click(function(){
-        $(".creditsPanel").removeClass("showcreds")
+       $(".closeP, .overlay").click(function(){
+        $(".creditsPanel").removeClass("showPanel")
        })
 
         
@@ -88,6 +130,10 @@
 
 
 <!--     
+
+    floaty letters
+
+
 
 
  -->
