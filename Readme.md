@@ -2,7 +2,7 @@
 
 ## Change Log
 
-### V0.1.4 UPDATE *2/3/23*
+### V0.1.4 UPDATE *2/4/23*
 - Updated title screen music
 - added animations to title
   - *Made letters floaty &amp; gave them a lil wiggle*
