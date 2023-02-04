@@ -2,6 +2,11 @@
 
 ## Change Log
 
+### V0.1.5 UPDATE *2/4/23*
+- Added attribution to credits
+ - *Names link to respective profiles*
+
+
 ### V0.1.4 UPDATE *2/4/23*
 - Updated title screen music
 - added animations to title
