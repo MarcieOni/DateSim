@@ -9,12 +9,14 @@
 </head>
 <body>
 
-<div class="box">    
-    <h1><span>D</span><span>a</span><span>t</span><span>e</span> <span>E</span><span>m</span><span>i</span><span>l</span><span>y</span></h1>
+<div class="box">
+    <canvas id='canvas'></canvas>
+    
+    <h1><span>D</span><span>a</span><span>t</span><span>e</span> <span>a</span> <span>M</span><span>i</span><span>q</span><span>o</span></h1>
 
     <h2>Simulator</h2>
 
-    <a class="start"><span>S</span><span>T</span><span>A</span><span>R</span><span>T</span></a>
+    <a class="start" href="./pages/character-select.html"><span>S</span><span>T</span><span>A</span><span>R</span><span>T</span></a>
 
     <div class="sound icon"><img src="images/sound.gif"></div>
     <div class="settings icon"><img src="images/settings-icon.png"></div>
@@ -32,53 +34,18 @@
     <div class="container">
         <div class="background"></div>
         <div class="content">
-            <p>DEV</p>
-            <a class="indent" href="https://github.com/MarcieOni" target="_blank" noopener noreferrer> ♥ Emily ♥ </a>
-            <h3>ART</h3>
-            <div class="indent">
+            <h2>DEVELOPER</h2>
+            <a href="https://github.com/MarcieOni" target="_blank" noopener noreferrer> ♥ Emily ♥ </a>
+            <h2>ART</h2>
+            <div>
                 <a href="https://www.pixilart.com/klafooty" target="_blank" noopener noreferrer>Klafooty</a>
             </div>
-            <span class="closeP"> X </span>
         </div>    
+        <span class="closeP"> X </span>
     </div>
 </div>
 
 <audio class="main-music" src="audio/home-music.mp3" loop></audio>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
@@ -92,17 +59,6 @@
         $(".creditsPanel").addClass("showPanel")
        })
 
-       $(".sound").click(function(){
-        if (!$(this).hasClass("playing")){
-            $(this).addClass("playing")
-            $(".main-music")[0].play()
-        } else {
-            $(this).removeClass("playing")
-            $(".main-music")[0].pause()
-        } 
-
-       })
-
        $(".closeS").click(function(){
         $(".settingPannel").removeClass("showsets")
        })
@@ -113,15 +69,10 @@
 
         
     });
-
-    
-
-
-
-
-
-
 </script>
+
+<script src="./scripts/particle.js"></script>
+<script src="./scripts/sound.js"></script>
 
 </body>
 </html>
@@ -135,41 +86,9 @@
 
 <!--     
 
-    floaty letters
+    
 
-
+    
 
 
  -->
-
-
-
-
-<!-- 
-    0.1.3 UPDATE
-    - added jQuery for java stuff
-    - added music
-        -added pause to music
-    - added setting box
-       -added close button
-    - added credits box
-        -added close button
- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
