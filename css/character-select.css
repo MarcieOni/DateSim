@@ -16,18 +16,6 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
-h1 {
-    font-size: 120px;
-    margin: 0;
-    font-family: 'Emilys Candy', cursive;
-}
-
-h2 {
-    font-family: 'Emilys Candy', cursive;
-    margin: 0px;
-    font-size: 42px;
-}
-
 .box {
     width: 100%;
     height: 100%;
@@ -63,78 +51,181 @@ h2 {
     cursor: url('../images/hover-cursor.png'), auto;
 }
 
+.char {
+    height: 492px;
+    width: 343px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.char .img {
+    clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.char.simp .img {
+    background-image: url('../images/simp.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.char.simp:hover {
+    background-image: url('../images/simp-bg.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
+.char.dom .img {
+    background-image: url('../images/dom.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.char.dom:hover {
+    background-image: url('../images/dom-bg.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
+.char.sub .img {
+    background-image: url('../images/sub.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.char.sub:hover {
+    background-image: url('../images/sub-bg.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.char.troll .img {
+    background-image: url('../images/troll.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.char.troll:hover {
+    background-image: url('../images/troll-bg.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
+.chair {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.button {
+    border: 2px solid #FFFFFF;
+    border-radius: 13px;
+    padding: 16px 24px;
+    text-align: center;
+    margin-top: 10px;
+    transform: translateX(-45px);
+    transition: all .29s ease-in-out;
+}
 
+.simp.button:hover {
+    color: rgb(206,255,11);
+    border: 2px solid rgb(206,255,11);
+}
 
+.dom.button:hover {
+    color: rgb(11,64,255);
+    border: 2px solid rgb(11,64,255);
+}
 
+.sub.button:hover {
+    color: rgb(255,11,187);
+    border: 2px solid rgb(255,11,187);
+}
 
+.troll.button:hover {
+    color: rgb(255,11,11);
+    border: 2px solid rgb(255,11,11);
+}
 
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+}
+
+.gradient {
+    position: relative;
+    width: 351px;
+    height: 500px;
+    clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.gradient.yellow {
+    background: rgb(206,255,11);
+    background: linear-gradient(0deg, rgba(206,255,11,1) 0%, rgba(206,255,11,1) 58%, rgba(255,255,255,1) 100%);
+}
+
+.gradient.blue {
+    background: rgb(11,64,255);
+    background: linear-gradient(0deg, rgba(11,64,255,1) 0%, rgba(11,64,255,1) 58%, rgba(255,255,255,1) 100%);
+}
+
+.gradient.pink {
+    background: rgb(255,11,187);
+    background: linear-gradient(0deg, rgba(255,11,187,1) 0%, rgba(255,11,187,1) 58%, rgba(255,255,255,1) 100%);
+}
+
+.gradient.red {
+    background: rgb(255,11,11);
+    background: linear-gradient(0deg, rgba(255,11,11,1) 0%, rgba(255,11,11,1) 58%, rgba(255,255,255,1) 100%);
+}
 
 
 /*
-i wanna make a rule that says if i mean like whenever i point on sumthing
-like the 
-what class do i make
-yea that is what i wanna have
-make the rule
-then the code
-
-how do i make it smoller
-
-is there a way 2 make that go away >.>
-
-i wanna make it smoller
-
-im getting ppl 2 follow kiara rn o.o 
-
-    did i do it rite o.o
-    what is happening
 
 
-    lets make a back button x.x
+    what hapen 2 r buttons
 
-    like 1st 
-    so that we can go back
+    yea we need 2 add the hover on r buttons
 
-    well idk how 2 find them x.x
 
-    ok what nxt
 
-    ok sryy
-    i was looking at cuute things x.x
-    
-    even like
-    jic
 
-    lets work on page 2
 
-    looks good so far x.x
 
-    so we need 2 get ur pic on the page
-    so we need 2 make boxes n stuff
 
-    lets put back arrow on bottom left
 
-    n then
-    
-    lets get the other icons
-    mayb the music changes o:
 
-    sumthing a lil more..
-    lets make it like
-    fun
-    idkk
 
-    but yea
-    so
 
-    what do we do 1st
+
+
+
+
+
+
 
 
 

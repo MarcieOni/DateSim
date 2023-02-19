@@ -2,6 +2,18 @@
 
 ## Change Log
 
+### V0.2.1 UPDATE *2/19/23*
+- Added title to character select screen
+- Added character boxes
+  - *Gave character boxes gradient backgrounds*
+- Added buttons for character boxes
+  - *Buttons have hover mousey*
+- Added special hover background to character boxes
+- Added "sub" &amp; "dom" image
+- Changed character box size
+  - *Adjusted buttons to align with new box shape*
+- Added hover effects to character buttons
+- Added flex-wrap for window resize
 
 ### V0.2.0 UPDATE *2/4/23*
 - Add Character Select page
