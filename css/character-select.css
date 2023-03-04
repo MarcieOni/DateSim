@@ -16,6 +16,24 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
+a, a:focus, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    display: block;
+    cursor: url('../images/cursor.png'), auto;
+}
+
+a:hover {
+    cursor: url('../images/hover-cursor.png'), auto;
+}
+
+.link {
+    transform: translateX(-45px);
+}
+
 .box {
     width: 100%;
     height: 100%;
@@ -144,7 +162,6 @@ body {
     padding: 16px 24px;
     text-align: center;
     margin-top: 10px;
-    transform: translateX(-45px);
     transition: all .29s ease-in-out;
 }
 
@@ -206,9 +223,7 @@ body {
 /*
 
 
-    what hapen 2 r buttons
-
-    yea we need 2 add the hover on r buttons
+    
 
 
 

@@ -8,5 +8,5 @@ $(document).ready(function() {
             $(".main-music")[0].pause()
         } 
 
-       })
-    });
+    })
+});

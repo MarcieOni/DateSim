@@ -2,6 +2,14 @@
 
 ## Change Log
 
+### V0.3.0 UPDATE *3/4/23*
+- Create Scene 1 Page
+- Create Assets for Scene 1
+- Set Background for Scene 1
+- Create text area for story 
+- Fix cursor hover for buttons on character select
+- Add moving background animation tied to cursor position
+
 ### V0.2.1 UPDATE *2/19/23*
 - Added title to character select screen
 - Added character boxes

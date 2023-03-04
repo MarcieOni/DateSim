@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Fasthand&family=Press+Start+2P&display=swap');
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+  cursor: url('../images/cursor.png'), auto;
+  user-select: none;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bgimg {
+    background-image: url('../images/broom-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+}
+
+.txtbox {
+    width: 90%;
+    height: 225px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    border: 8px solid #fff;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 26px;
+    line-height: 150%;
+    /* opacity: 25%; */
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgba(83,0,81,0.5) 0%, rgba(147,0,143,0.5) 42%, rgba(224,0,218,0.5) 66%, rgba(249,142,246,0.5) 100%);
+}
+
+p {
+    margin: 0;
+}
+
+.fade-in {
+	-webkit-animation: fade-in 5.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 5.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.slit-in-horizontal {
+	-webkit-animation: slit-in-horizontal 0.45s ease-out both;
+  animation: slit-in-horizontal 0.45s ease-out both;
+  animation-delay: 5.2s;
+}
+
+/* ----------------------------------------
+* animation fade-in
+* ----------------------------------------
+*/
+@-webkit-keyframes fade-in {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+@keyframes fade-in {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+/**
+ * ----------------------------------------
+ * animation slit-in-horizontal
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slit-in-horizontal {
+  0% {
+    -webkit-transform: translateX(-50%) translateZ(-800px) rotateX(90deg);
+    transform: translateX(-50%) translateZ(-800px) rotateX(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateX(-50%) translateZ(-160px) rotateX(87deg);
+    transform: translateX(-50%) translateZ(-160px) rotateX(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) rotateX(0);
+    transform: translateX(-50%) translateZ(0) rotateX(0);
+  }
+}
+@keyframes slit-in-horizontal {
+  0% {
+    -webkit-transform: translateX(-50%) translateZ(-800px) rotateX(90deg);
+    transform: translateX(-50%) translateZ(-800px) rotateX(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateX(-50%) translateZ(-160px) rotateX(87deg);
+    transform: translateX(-50%) translateZ(-160px) rotateX(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) rotateX(0);
+    transform: translateX(-50%) translateZ(0) rotateX(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
