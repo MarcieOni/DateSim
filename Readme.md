@@ -2,6 +2,17 @@
 
 ## Change Log
 
+### V0.4.0 UPDATE *4/30/23*
+- Added typewriter effects to text box
+- Created story array 
+- Added "Miqo Box"
+  - *Adds new miqo pics to the game*
+- Updated credits to have kether listed ♥
+- Added options box in MSQ
+
+#### Known Bugs
+- Clicking on the text box b4 it is done writing will cause the sentences to overlap.
+
 ### V0.3.0 UPDATE *3/4/23*
 - Create Scene 1 Page
 - Create Assets for Scene 1

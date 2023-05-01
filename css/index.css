@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Fasthand&family=Press+Start+2P&display=swap');
 
-html, body {
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
 body {
@@ -17,15 +18,15 @@ body {
 }
 
 h1 {
-    font-size: 120px;
-    margin: 0;
-    font-family: 'Emilys Candy', cursive;
+  font-size: 120px;
+  margin: 0;
+  font-family: 'Emilys Candy', cursive;
 }
 
 h2 {
-    font-family: 'Emilys Candy', cursive;
-    margin: 0px;
-    font-size: 42px;
+  font-family: 'Emilys Candy', cursive;
+  margin: 0px;
+  font-size: 42px;
 }
 
 .content h2 {
@@ -35,39 +36,41 @@ h2 {
   margin-bottom: 10px;
 }
 
-.content a{
+.content a {
   margin-bottom: 25px;
 }
 
 p {
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 8px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 8px;
 }
 
-a, a:visited, a:focus {
+a,
+a:visited,
+a:focus {
   color: white;
   text-decoration: none;
 }
 
 a.start {
-    color: fuchsia;
-    font-size: 20px;
-    animation: flash 1.5s steps(2, end) infinite both;
-    margin-top: 42px;
-    display: block;
-    cursor: url('../images/hover-cursor.png'), auto;
+  color: fuchsia;
+  font-size: 20px;
+  animation: flash 1.5s steps(2, end) infinite both;
+  margin-top: 42px;
+  display: block;
+  cursor: url('../images/hover-cursor.png'), auto;
 }
 
 .box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    background-color: #1e1e1e;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  position: relative;
 }
 
 .box * {
@@ -75,31 +78,31 @@ a.start {
 }
 
 .sound {
-    position: absolute;
-    top: 16px;
-    left: 16px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
-.sound:not(.playing) img{
-    filter: grayscale();
+.sound:not(.playing) img {
+  filter: grayscale();
 }
 
 .settings {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    animation: float 1.2s ease-in-out infinite alternate-reverse both;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  animation: float 1.2s ease-in-out infinite alternate-reverse both;
 }
 
-.settings img{
-    height: 55px;
+.settings img {
+  height: 55px;
 }
 
 .credits {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 @keyframes flash {
@@ -116,6 +119,7 @@ a.start {
   0% {
     transform: translateY(-10%)
   }
+
   100% {
     transform: translateY(10%)
   }
@@ -125,6 +129,7 @@ a.start {
   0% {
     transform: translateY(-10%) rotate(-5deg)
   }
+
   100% {
     transform: translateY(10%) rotate(5deg)
   }
@@ -134,40 +139,44 @@ a.start {
   0% {
     transform: translateY(0%)
   }
+
   100% {
     transform: translateY(-50%)
   }
 }
 
- @-webkit-keyframes puff-in-center {
+@-webkit-keyframes puff-in-center {
   0% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
+
 @keyframes puff-in-center {
   0% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     -webkit-filter: blur(4px);
-            filter: blur(4px);
+    filter: blur(4px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -199,28 +208,43 @@ a.start {
   transform-origin: center center;
 }
 
-.box h1 span:nth-child(2) { /*A*/
+.box h1 span:nth-child(2) {
+  /*A*/
   animation-duration: 1.49s;
 }
-.box h1 span:nth-child(3) { /*T*/
+
+.box h1 span:nth-child(3) {
+  /*T*/
   animation-duration: 1.31s;
 }
-.box h1 span:nth-child(4) { /*E*/
+
+.box h1 span:nth-child(4) {
+  /*E*/
   animation-duration: 1.67s;
 }
-.box h1 span:nth-child(5) { /*E*/
+
+.box h1 span:nth-child(5) {
+  /*E*/
   animation-duration: 1.98s;
 }
-.box h1 span:nth-child(6) { /*m*/
+
+.box h1 span:nth-child(6) {
+  /*m*/
   animation-duration: 1.27s;
 }
-.box h1 span:nth-child(7) { /*i*/
+
+.box h1 span:nth-child(7) {
+  /*i*/
   animation-duration: 1.89s;
 }
-.box h1 span:nth-child(8) { /*l*/
+
+.box h1 span:nth-child(8) {
+  /*l*/
   animation-duration: 1.19s;
 }
-.box h1 span:nth-child(9) { /*y*/
+
+.box h1 span:nth-child(9) {
+  /*y*/
   animation-duration: 1.77s;
 }
 
@@ -231,13 +255,19 @@ a.start {
   position: absolute;
   top: 0px;
   right: 0px;
-  background-color: deeppink; 
+  background-color: deeppink;
   transition: all 0.39s ease-in-out;
   white-space: nowrap;
 }
 
 .showsets {
   width: 200px;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .creditsPanel {
@@ -303,7 +333,10 @@ a.start {
   animation: puff-in-center 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
-.icon, .closeS, .closeP, a {
+.icon,
+.closeS,
+.closeP,
+a {
   cursor: url('../images/hover-cursor.png'), auto;
 }
 
@@ -326,75 +359,86 @@ a.start {
   left: 0px;
 }
 
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInRight {
+
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInRight {
+
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-  i was so sad yea
- lil 0
-  i do that all the time x.x
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-i kinda wanna make it a pic
-
-  i wanna smoke cigyy 
-  we should push r code
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/

@@ -1,3 +1,10 @@
+/*
+•───────•°•❀•°•───────•
+       stuff x.x
+•───────•°•❀•°•───────•
+*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Fasthand&family=Press+Start+2P&display=swap');
 
 html, body {
@@ -44,16 +51,63 @@ body {
     left: 50%;
     border: 8px solid #fff;
     border-radius: 12px;
-    padding: 20px;
     font-size: 26px;
     line-height: 150%;
-    /* opacity: 25%; */
     transform: translateX(-50%);
+    z-index: 1000;
     background: linear-gradient(180deg, rgba(83,0,81,0.5) 0%, rgba(147,0,143,0.5) 42%, rgba(224,0,218,0.5) 66%, rgba(249,142,246,0.5) 100%);
 }
 
+.options {
+  display: none;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 50%;
+  transition: all 0.19s ease-in-out;
+}
+
+.option:hover {
+  background-color: rgba(247, 0, 255, 50%);
+}
+
+.optionShow {
+  display: flex;
+}
+
+.hideBox {
+  display: none;
+}
+
 p {
-    margin: 0;
+  margin: 0;
+  padding: 20px;
+}
+
+.themiqo {
+  position:absolute;
+  right: 20%;
+  bottom: 0px;
+  height: 90%;
+}
+
+.miqo {
+  height: 100%;
+  transition: .18s linear all;
+  opacity: 1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.sneaky {
+  opacity: 0;
 }
 
 .fade-in {
@@ -61,15 +115,22 @@ p {
 	        animation: fade-in 5.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+/*
+•───────•°•❀•°•───────•
+       animations
+•───────•°•❀•°•───────•
+*/
+
 .slit-in-horizontal {
 	-webkit-animation: slit-in-horizontal 0.45s ease-out both;
   animation: slit-in-horizontal 0.45s ease-out both;
   animation-delay: 5.2s;
 }
 
-/* ----------------------------------------
-* animation fade-in
-* ----------------------------------------
+/*
+•───────•°•❀•°•───────•
+   animation - fade-in
+•───────•°•❀•°•───────•
 */
 @-webkit-keyframes fade-in {
  0% {
@@ -88,11 +149,11 @@ p {
  }
 }
 
-/**
- * ----------------------------------------
- * animation slit-in-horizontal
- * ----------------------------------------
- */
+/*
+ •──────────•°•❀•°•──────────•
+  animation slit-in-horizontal
+ •──────────•°•❀•°•──────────•
+*/
  @-webkit-keyframes slit-in-horizontal {
   0% {
     -webkit-transform: translateX(-50%) translateZ(-800px) rotateX(90deg);

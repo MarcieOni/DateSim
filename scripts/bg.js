@@ -21,3 +21,37 @@ $(document).ready(function() {
     window.addEventListener("touchstart", touches);
     window.addEventListener("touchmove", touches);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
